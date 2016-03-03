@@ -1,0 +1,53 @@
+/*
+ Theme Name:   Hueman Child
+ Theme URI:    http://jaehosong.com/
+ Description:  Hueman Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     hueman-master
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  hueman-child
+*/
+
+
+/* ------------------------------------------------------------------------- *
+ *  Theme customization starts here
+/* ------------------------------------------------------------------------- */
+
+/* Global */
+#header {
+	background-color:#FFF;
+}
+.site-description {
+	color:#393939;
+}
+.site-image {
+	max-height:none;
+}
+#nav-header .container {
+	background-color: #33363B;
+}
+.mystyle {}
+
+
+/* Tablet - 800px, 768px & 720px */
+@media only screen and (min-width: 720px) and (max-width: 800px) {
+	.mystyle {}
+}
+
+
+/* Mobile - 480px & 320px */
+@media only screen and (max-width: 719px) {
+	#nav-header.nav-container {
+		background-color: #292929;
+	}
+}
+
+
+/* Mobile - 320px */
+@media only screen and (max-width: 479px) {
+	.mystyle {}
+}
