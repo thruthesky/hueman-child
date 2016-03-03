@@ -21,11 +21,18 @@
 #header {
 	background-color:#FFF;
 }
+.site-title a {
+	color:#393939;
+	font-family: 'Malgun Gothic';
+}
 .site-description {
 	color:#393939;
 }
 .site-image {
 	max-height:none;
+}
+.page-title.pad.group {
+	background-color: #F0F3F9;
 }
 #nav-header .container {
 	background-color: #33363B;
