@@ -51,7 +51,7 @@
 					background-color: #7f8b91;
 					color:white;
 					font-family: "Gulim", "AppleGothic", "Dotum", serif;
-					font-size:11px;
+					font-size:12px;
 					line-height: 1.4em;
 					text-align:center;
 				}
