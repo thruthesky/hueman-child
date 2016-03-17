@@ -11,3 +11,10 @@ function theme_enqueue_styles() {
     wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/etc/font-awesome/css/font-awesome.min.css');
     wp_enqueue_script( 'hueman-child', get_stylesheet_directory_uri() . '/js/hueman-child.js' );
 }
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+		show_admin_bar(false);
+	}
+}
+
