@@ -20,6 +20,19 @@
 
 
 
+	<div class="point-ad-title">
+		필리핀 교민 업소 광고
+		<span class="dashicons dashicons-admin-comments"></span>
+	</div>
+	<div class="point-ad-desc">
+		<a href="http://www.philgo.com/?module=member&action=point_buy" target="_blank">
+			필고에서 광고 등록하시면 필고, 헬로필리핀앱, 필고 패밀리 사이트 등에 광고가 표시됩니다.
+			<br>
+			필고 포인트 구매 페이지 열기
+		</a>
+	</div>
+
+
 	<style>
 		.post-ad ul li {
 			display:block;

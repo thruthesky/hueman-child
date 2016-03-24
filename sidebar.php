@@ -122,8 +122,6 @@ if ( $layout != 'col-1c'):
 				<a href="http://www.philgo.com/?module=member&action=point_buy" target="_blank">
 					필고에서 회원 포인트로 광고글을 등록하시면 필고, 헬로필리핀앱, 필고 패밀리 사이트 등에 광고가 표시됩니다.<br>
 					필고 포인트 구매 페이지 열기
-					<br>
-					전화 070 7893 1741
 				</a>
 			</div>
 
