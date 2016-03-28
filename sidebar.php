@@ -161,7 +161,9 @@ if ( $layout != 'col-1c'):
 					?>
 					<li>
 						<a href="http://www.philgo.com/<?php echo $ad['url']?>" target="_blank">
-							<div class="photo"><img src="<?php echo $ad['src_thumbnail']?>"></div>
+							<?php if ( isset($ad['src_thumbnail']) && $ad['src_thumbnail'] ) { ?>
+								<div class="photo"><img src="<?php echo $ad['src_thumbnail']?>"></div>
+							<?php } ?>
 							<div class="subject"><?php echo $ad['subject']?></div>
 						</a>
 					</li>
@@ -178,10 +180,10 @@ if ( $layout != 'col-1c'):
 	</div><!--/.sidebar-->
 
 	<?php if (
-		( $layout == 'col-3cm' ) ||
-		( $layout == 'col-3cl' ) ||
-		( $layout == 'col-3cr' ) )
+	( $layout == 'col-3cm' ) ||
+	( $layout == 'col-3cl' ) ||
+	( $layout == 'col-3cr' ) )
 { get_template_part('sidebar-2'); }
 	?>
-	
+
 <?php endif; ?>
