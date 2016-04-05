@@ -13,7 +13,15 @@
 		<?php endif; ?>
 		
 		<?php if ( ot_get_option( 'post-nav' ) == 's2') { get_template_part('inc/post-nav'); } ?>
-		
+
+		<?php if ( user()->login() ) : ?>
+			로그인 정보
+		<?php else : ?>
+			로그인하기
+		<?php endif; ?>
+
+		<?php echo do_shortcode('[wp_log_info]');?>
+
 		<?php dynamic_sidebar($sidebar); ?>
 		
 	</div><!--/.sidebar-content-->
