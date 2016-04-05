@@ -14,13 +14,21 @@
 		
 		<?php if ( ot_get_option( 'post-nav' ) == 's2') { get_template_part('inc/post-nav'); } ?>
 
-		<?php if ( user()->login() ) : ?>
-			로그인 정보
-		<?php else : ?>
-			로그인하기
-		<?php endif; ?>
-
-		<?php echo do_shortcode('[wp_log_info]');?>
+	<style>
+		.user-login { padding: 2em; }
+	</style>
+		<div class='user-login'>
+			<div class='user-login-title'>
+				<?php if ( user()->login() ) : ?>
+					로그인 정보
+				<?php else : ?>
+					로그인하기
+				<?php endif; ?>
+			</div>
+			<div class='user-login-content'>
+				<?php echo do_shortcode('[wp_log_info]');?>
+			</div>
+		</div>
 
 		<?php dynamic_sidebar($sidebar); ?>
 		
