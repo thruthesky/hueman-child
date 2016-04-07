@@ -79,6 +79,7 @@
 	<?php
 	$post_top = philgo_ad('post_top');
 	if ( $post_top ) {
+		$post_top = count( $post_top ) < 4 ? $post_top  : array_slice( $post_top, 0, 4 );
 		echo '<div class="post-ad"><ul>';
 		foreach ( $post_top as $ad ) {
 			?>

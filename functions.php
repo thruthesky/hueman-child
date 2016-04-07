@@ -27,6 +27,10 @@ function philgo_ad( $part ) {
         $response = wp_remote_get( 'http://www.philgo.com/?module=etc&action=ad&submit=1' );
         set_transient( $id, $response, 60 * 60 * 24 ); // 하루 동안 캐시
     }
+	if ( is_wp_error($response) ) {
+		delete_transient( $id );
+		return;
+	}
     $body = $response['body'];
     if ( empty($body) ) return null;
     $json = json_decode($body, true);
