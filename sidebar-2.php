@@ -30,6 +30,7 @@
 			</div>
 		</div>
 
+
 		<?php dynamic_sidebar($sidebar); ?>
 		
 	</div><!--/.sidebar-content-->
